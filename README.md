@@ -102,26 +102,26 @@ GraphX is designed for:
 ## Roadmap
 
 ### Phase 1
-- Landing page
-- User interface design
-- Core graphing workspace
+- Landing page {In Production}
+- User interface design {In Planning}
+- Core graphing workspace {In Planning}
 
 ### Phase 2
-- Equation parser
-- Graph rendering engine
-- Multi-function support
+- Equation parser {Theory -Done, Application -In Prog}
+- Graph rendering engine {In Planning}
+- Multi-function support {In Planning}
 
 ### Phase 3
-- Calculus and analytical tools
-- Project management system
-
+- Calculus and analytical tools {In Planning}
+- Project management system {In Planning}
+ 
 ### Phase 4
-- GPU acceleration
-- Advanced visualization techniques
+- GPU acceleration {In Planning}
+- Advanced visualization techniques {In Planning}
 
 ### Phase 5
-- Mathematical simulations
-- Collaborative and sharing features
+- Mathematical simulations {In Planning}
+- Collaborative and sharing features {In Planning}
 
 ---
 
