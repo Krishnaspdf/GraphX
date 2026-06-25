@@ -3,14 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>GraphX</title>
 </head>
+<!--GraphX
+
+├── Header
+│      Save
+│      Load
+│      Export
+│      Theme
+│
+├── Sidebar
+│      Search
+│      Equations
+│      History
+│
+├── Graph Engine
+│      Canvas
+│      Overlay
+│      Coordinates
+│
+├── Footer
+│      Status
+│      FPS
+│      Mouse Position
+│
+└── Modals
+       Settings
+       Save
+       Load
+       Export
+       
+body
+├── header
+├── nav
+├── main
+│   ├── canvas
+│   └── overlay
+├── footer
+└── modal-container-->
 <body>
-    <h1>Hello World</h1>
-    <div id="sidebar">
-        <i class="share icon"></i>
-        <i class="undo icon"></i>
-        <i class="redo icon"></i>
+    <header id="head">
+    <div class="logo">
+        GraphX
+        <!--* Logo icon
+        * GraphX text
+        * Version number-->
     </div>
+    <div class="project-info">
+        <!--Untitled Graph
+        Saved 2 mins ago
+        Later:
+        Physics Simulation.graphx-->
+    </div>
+    <div class="graph-controls">
+        <!--Save
+            Load
+            Export
+            Share
+            Reset-->
+    </div>
+    <div class="account">
+        <!--Manage.-->
+    </div>
+    <div class="theme-controls">
+        <!--Dark Or Light By Default-->
+    </div>
+    </header>
+
+    <main id="graph">
+
+    <canvas id="graphCanvas">
+        <!--* axes
+            * points
+            * curves
+            * shaders
+            * GPU rendering-->
+    </canvas>
+    <div class="graph-overlay">
+        <!--Zoom In Zoom Out
+        Move To Origin Fullscreen Grid & Axis Toggle {Mouse Coords Bottom-right }
+        * zoom buttons
+        * reset button
+        * fullscreen
+        * grid toggle
+        * axis toggle
+        -->
+        <div class="coordinate-display">
+            
+        </div>
+        <div class="graph-tools">
+
+        </div>
+    </div>
+    </main>
+    <nav id="navbar">
+        <div class="sidebar-header">
+            <!--Functions
+                Add Equations-->
+        </div>
+        <div class="search-section"></div>
+        <div class="equation-section">
+             <div class="equation-list">
+
+            </div>
+        </div>
+        <div class="history-section"></div>
+        <!--Order:
+            Sidebar Header
+            │
+            ├── Search
+            │
+            ├── Add Equation Button
+            │
+            ├── Equation List
+            │      ├── Equation Row
+            │      ├── Equation Row
+            │      └── Equation Row
+            │
+            └── History-->
+        <input
+        type="text"
+        placeholder="Search equations..."> <!--Search Equations-->
+
+        <div class="equation-list">
+
+        <div class="equation-row">
+
+            <button class="visibility"></button>
+
+            <button class="color"></button>
+
+            <input
+            type="text"
+            class="equation-input"
+            placeholder="y = x²"
+        >
+
+        <button class="settings"></button>
+
+    </div>
+            <!--🟢  y=x²
+                👁  visibility
+                ⚙  settings
+                🟢 🔴 🔵 color picker
+                Dropdown -> Rename,Duplicate,Delete
+                Error -> Indicator ❌ Invalid Expression
+                🔒 Lock Button
+                ⋮⋮ Drag handle { reorder eqns }
+                History -> undo / redo
+                Saved Proj ( Later on )
+                {
+                Variables allow a = 5, b = 10
+                Now, y = ax+b,
+                a [-----●----], b [-----●----]
+                } ( Later on )
+                -->
+    <div class="equation-row"></div>
+        <!--Logo -> save section and load from save section
+        Add Equation
+        Equation Rows -> visibility toggle on or off and input field
+        Settings Icon that does delete copy
+        Undo
+        Redo
+        Expand
+        -->
+        </div>
+        </div>
+    </nav>
+    <footer id="footer">
+
+        <!-- Left (Graph Status -> Ready , Rendering)
+        Center (Graph Stats -> Functions: 8
+        Points: 1,000,000
+        FPS: 144 ) After -> CUDA render -> GPU Active)
+        Mouse Coords
+        -->
+    <div class="status">
+        Ready
+    </div>
+    <div class="stats">
+        Functions: 0
+        FPS: 0
+    </div>
+    <div class="coords">
+        X: 0
+        Y: 0
+    </div>
+    </footer>
 </body>
 </html>
