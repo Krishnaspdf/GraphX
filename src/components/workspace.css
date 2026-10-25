@@ -1,7 +1,14 @@
-.workspace { display: grid; grid-template-columns: 320px 1fr; gap: 1rem; height: calc(100vh - 120px); }
-.sidebar { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1.25rem; overflow-y: auto; }
+.workspace { display: grid; grid-template-columns: 340px 1fr; gap: 1rem; height: calc(100vh - 160px); background: #0b0c15; min-height: 500px; }
+.toolbar { grid-column: 1 / -1; display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; flex-wrap: wrap; }
+.toolbar h2 { font-size: 1rem; margin-right: auto; }
+.toolbar button { padding: 0.35rem 0.6rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #e8ecf1; font-size: 0.8rem; cursor: pointer; }
+.toolbar button:hover { background: rgba(255,255,255,0.1); }
+.sidebar { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1.25rem; overflow-y: auto; min-height: 300px; }
 .sidebar h2, .sidebar h3 { font-size: 0.95rem; margin-bottom: 0.75rem; color: #e8ecf1; }
 .expr-input { width: 100%; padding: 0.6rem 0.75rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #e8ecf1; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; margin-bottom: 0.75rem; }
+.expression-row { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; padding: 0.5rem; background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); }
+.expression-row input { flex: 1; background: transparent; border: none; color: #e8ecf1; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; }
+.color-dot { width: 14px; height: 14px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.15); }
 .tools { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .tools button { flex: 1; padding: 0.4rem 0.6rem; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #e8ecf1; border-radius: 6px; font-size: 0.8rem; cursor: pointer; transition: background 0.15s; }
 .tools button:hover { background: rgba(255,255,255,0.1); }
@@ -10,3 +17,9 @@ hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 1rem 0;
 .canvas-area { position: relative; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; overflow: hidden; }
 canvas { width: 100%; height: 100%; display: block; }
 .overlay { position: absolute; top: 12px; left: 12px; background: rgba(11,12,21,0.8); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 0.3rem 0.6rem; font-size: 0.75rem; color: #94a3b8; pointer-events: none; }
+.error-msg { color: #f87171; font-size: 0.8rem; margin-top: 0.25rem; font-family: 'JetBrains Mono', monospace; }
+.empty-state { color: #94a3b8; font-size: 0.85rem; text-align: center; padding: 2rem; border: 1px dashed rgba(255,255,255,0.1); border-radius: 8px; }
+@media (max-width: 900px) {
+  .workspace { grid-template-columns: 1fr; }
+  .toolbar { grid-column: 1; }
+}

@@ -1,4 +1,4 @@
-import { parseExpression } from './parser';
+import { parseExpression } from './parser.js';
 
 const MATH = {
   sin: Math.sin,

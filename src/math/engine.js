@@ -1,3 +1,3 @@
-export { tokenize } from './tokenizer';
-export { parseExpression } from './parser';
-export { evaluateAST, evaluateString } from './evaluator';
+export { tokenize } from './tokenizer.js';
+export { parseExpression } from './parser.js';
+export { evaluateAST, evaluateString } from './evaluator.js';

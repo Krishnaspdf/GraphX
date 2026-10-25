@@ -1,4 +1,4 @@
-import { tokenize } from './tokenizer';
+import { tokenize } from './tokenizer.js';
 
 export function parseExpression(input) {
   const tokens = tokenize(input);
