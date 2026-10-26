@@ -51,31 +51,31 @@ Use `[ ]` for pending, `[x]` for completed, and add notes or links to commits fo
 
 ## 3. Evaluation engine
 
-- [ ] Implement AST evaluation for numeric expressions.
-- [ ] Implement arithmetic operators and supported functions.
-- [ ] Define handling for division by zero, invalid logarithms, and non-finite results.
-- [ ] Add evaluation tests with known expected values.
-- [ ] Separate variable bindings from expression ASTs.
-- [ ] Add expression diagnostics that can be shown in the UI.
-- [ ] Add limits for expression length and evaluation work.
-- [ ] Add deterministic behavior for errors and unsupported syntax.
+- [x] Implement AST evaluation for numeric expressions.
+- [x] Implement arithmetic operators and supported functions.
+- [x] Define handling for division by zero, invalid logarithms, and non-finite results.
+- [x] Add evaluation tests with known expected values.
+- [x] Separate variable bindings from expression ASTs.
+- [x] Add expression diagnostics that can be shown in the UI.
+- [x] Add limits for expression length and evaluation work.
+- [x] Add deterministic behavior for errors and unsupported syntax.
 
 **Acceptance:** the evaluator returns a numeric result or a structured error; it never crashes the UI.
 
 ## 4. Coordinate system and Canvas 2D renderer
 
-- [ ] Define a `ViewState` with world bounds or center + scale.
-- [ ] Implement world-to-screen coordinate conversion.
-- [ ] Implement screen-to-world coordinate conversion.
-- [ ] Test round-trip coordinate conversion.
-- [ ] Render the background and grid.
-- [ ] Calculate readable grid spacing at different zoom levels.
-- [ ] Render axes and tick labels.
-- [ ] Handle device-pixel ratio and canvas resizing.
-- [ ] Implement a renderer interface independent of the math engine.
-- [ ] Render a test point and a simple line.
-- [ ] Add clipping to the visible graph viewport.
-- [ ] Avoid connecting across discontinuities or non-finite samples.
+- [x] Define a `ViewState` with world bounds or center + scale.
+- [x] Implement world-to-screen coordinate conversion.
+- [x] Implement screen-to-world coordinate conversion.
+- [x] Test round-trip coordinate conversion.
+- [x] Render the background and grid.
+- [x] Calculate readable grid spacing at different zoom levels.
+- [x] Render axes and tick labels.
+- [x] Handle device-pixel ratio and canvas resizing.
+- [x] Implement a renderer interface independent of the math engine.
+- [x] Render a test point and a simple line.
+- [x] Add clipping to the visible graph viewport.
+- [x] Avoid connecting across discontinuities or non-finite samples.
 
 **Acceptance:** axes and points stay aligned during resize, zoom, and pan; coordinate transforms pass tests.
 

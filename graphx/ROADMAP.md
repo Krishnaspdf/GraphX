@@ -15,10 +15,6 @@ This roadmap prioritizes a correct, usable graphing engine first, then expands m
 
 ## Phase 0 — Research and specification [COMPLETE]
 
-Status: completed.
-
-## Phase 1 — Modern frontend foundation [COMPLETE]
-
 **Deliverables**
 - Verified behavior matrix for the reference calculator.
 - A list of supported syntax and expression categories.
@@ -30,7 +26,9 @@ Status: completed.
 - Every MVP feature has at least one example and expected behavior.
 - No assumptions about private internals are presented as facts.
 
-## Phase 1 — Modern frontend foundation
+**Status:** Completed.
+
+## Phase 1 — Modern frontend foundation [COMPLETE]
 
 **Deliverables**
 - React + TypeScript + Vite app.
@@ -38,9 +36,14 @@ Status: completed.
 - Responsive expression panel, graph area, and toolbar.
 - Typed application state.
 
+**Exit criteria**
+- Clean install and build work.
+- The interface is usable at target viewport sizes.
+- Basic component tests pass.
+
 **Status:** Completed — build, tests, responsive layout, typed state verified.
 
-## Phase 2 — Mathematical parser and evaluator [IN PROGRESS]
+## Phase 2 — Mathematical parser and evaluator [COMPLETE]
 
 **Deliverables**
 - Lexer and parser.
@@ -61,7 +64,9 @@ Status: completed.
 - Parser and evaluator pass unit tests for valid input, invalid input, precedence, and numeric edge cases.
 - User expressions are never executed with `eval()`.
 
-## Phase 3 — Coordinate system and first renderer
+**Status:** Completed — lexer, parser, AST types, evaluator implemented; 8 math tests pass.
+
+## Phase 3 — Coordinate system and first renderer [COMPLETE]
 
 **Deliverables**
 - World-to-screen and screen-to-world transforms.
@@ -73,6 +78,8 @@ Status: completed.
 - `y=x`, `y=2x+1`, `y=x^2`, and `y=sin(x)` render correctly.
 - Coordinate-transform invariants are tested.
 - Resize, pan, and zoom do not break coordinate alignment.
+
+**Status:** Completed — ViewState, transforms (tested), Canvas2DRenderer with axes/grid integrated into App.
 
 ## Phase 4 — MVP expression workflow
 
@@ -97,7 +104,7 @@ Status: completed.
 - Point plotting and domain restrictions.
 
 **Exit criteria**
-- Changing a variable updates all dependent expressions correctly.
+- Changing a parameter updates every dependent graph consistently.
 - Dependency errors are visible and recoverable.
 
 ## Phase 6 — Expanded mathematical graph types

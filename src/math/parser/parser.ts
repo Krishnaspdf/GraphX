@@ -1,6 +1,6 @@
 import { tokenize } from '../lexer/lexer';
 import type { Token } from '../lexer/types';
-import type { ExprNode, BinaryExpr, UnaryExpr, NumberLiteral, Variable, FunctionCall } from './types';
+import type { ExprNode } from '../ast/types';
 
 export function parseExpression(source: string): ExprNode {
   const tokens = tokenize(source);
